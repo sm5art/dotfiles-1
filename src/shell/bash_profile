@@ -50,7 +50,8 @@ source_bash_files() {
 source_bash_files
 unset -f source_bash_files
 nvm use 16
-alias listdir="sudo ls -1 | xargs du -sh"
+
+alias listdir='sudo ls -1 -a | grep -Ev "(proc|var|tmp|sys|etc|run|\.\.|^\.$)" | xargs du -sh'
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
