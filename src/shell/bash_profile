@@ -49,10 +49,35 @@ source_bash_files() {
 
 source_bash_files
 unset -f source_bash_files
+nvm use 16
 
+alias listdir='sudo ls -1 -a | grep -Ev "(proc|var|tmp|sys|etc|run|\.\.|^\.$)" | xargs du -sh'
+alias l='ls -l'
+alias astudio='/home/artur/.astudio/bin/studio.sh'
+alias clipc='xclip -se c'
+export PATH="/home/artur/Android/Sdk/platform-tools:$PATH:/home/artur/.astudio/jre/bin"
+export JAVA_HOME="/home/artur/.astudio/jre"
+export ANDROID_SDK_ROOT="/home/artur/Android/Sdk"
+# source ~/anaconda3/etc/profile.d/conda.sh  # commented out by conda initialize
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Clear system messages (system copyright notice, the date
 # and time of the last login, the message of the day, etc.).
 
 clear
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
