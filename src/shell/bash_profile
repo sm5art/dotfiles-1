@@ -53,6 +53,7 @@ nvm use 16
 
 alias listdir='sudo ls -1 -a | grep -Ev "(proc|var|tmp|sys|etc|run|\.\.|^\.$)" | xargs du -sh'
 
+alias clipc='xclip -se c'
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Clear system messages (system copyright notice, the date
