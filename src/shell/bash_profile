@@ -58,7 +58,7 @@ alias clipc='xclip -se c'
 export PATH="/home/artur/Android/Sdk/platform-tools:$PATH:/home/artur/.astudio/jre/bin"
 export JAVA_HOME="/home/artur/.astudio/jre"
 export ANDROID_SDK_ROOT="/home/artur/Android/Sdk"
-
+source ~/anaconda3/etc/profile.d/conda.sh
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Clear system messages (system copyright notice, the date
