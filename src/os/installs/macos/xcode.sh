@@ -31,11 +31,11 @@ install_xcode() {
 
     # Wait until `Xcode` is installed.
 
-    execute \
-        "until is_xcode_installed; do \
-            sleep 5; \
-         done" \
-        "Xcode.app"
+    #execute \
+    #    "until is_xcode_installed; do \
+    #        sleep 5; \
+    #     done" \
+    #    "Xcode.app"
 
 }
 
