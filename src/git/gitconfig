@@ -279,7 +279,7 @@
     # Do not guess the user's identity.
     # https://github.com/git/git/blob/90f7b16b3adc78d4bbabbd426fb69aa78c714f71/Documentation/config.txt#L2847-L2855
 
-	email = artur.kashperskiy@autodesk.com
+	email = art@network.ru
 	name = Artur Kashperskiy
 
     # [!] DO NOT store sensitive information such as the Git user

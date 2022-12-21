@@ -49,7 +49,6 @@ source_bash_files() {
 
 source_bash_files
 unset -f source_bash_files
-nvm use 14
 
 alias listdir='sudo ls -1 -a | grep -Ev "(proc|var|tmp|sys|etc|run|\.\.|^\.$)" | xargs du -sh'
 alias l='ls -l'
@@ -71,14 +70,14 @@ clear
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/kashar/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/arturk/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/kashar/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/kashar/opt/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/arturk/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/arturk/opt/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/kashar/opt/anaconda3/bin:$PATH"
+        export PATH="/Users/arturk/opt/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
